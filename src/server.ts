@@ -1,7 +1,12 @@
 import express from 'express'
 import { sequelize } from './database'
+import { adminJs, adminjsRouter } from './adminjs'
 
 const app = express()
+
+app.use(express.static('public'))
+
+app.use(adminJs.options.rootPath, adminjsRouter)
 
 const PORT = process.env.port || 3000
 
