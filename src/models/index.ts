@@ -1,3 +1,4 @@
+import { User } from './Users';
 import { Category } from "./Category";  
 import { Course }  from "./Course";
 import { Episode } from "./Episode";
@@ -13,5 +14,6 @@ Episode.belongsTo(Course)
 export {
   Category,
   Course,
-  Episode
+  Episode,
+  User
 }
