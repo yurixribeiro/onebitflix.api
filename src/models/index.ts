@@ -6,8 +6,7 @@ import { Episode } from "./Episode";
 Category.hasMany(Course, { as: 'courses'})
 
 Course.belongsTo(Category)
-
-Course.hasMany(Episode)
+Course.hasMany(Episode) //Episodes
 
 Episode.belongsTo(Course)
 
