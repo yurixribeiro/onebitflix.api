@@ -1,5 +1,5 @@
 import { User } from "../models"
-import { UserCreationAttributes } from "../models/Users"
+import { UserCreationAttributes } from "../models/User"
 
 export const userService = {
   findByEmail: async (email: string) => {
