@@ -9,7 +9,7 @@ export const jwtService = {
     })
   },
 
-  veriftToken: (token: string, callbackfn: jwt.VerifyCallback) => {
+  veriftToken: (token: string, callbackfn: (jwt.VerifyCallback)) => {
     jwt.verify(token, secret, callbackfn)
   }
 }
